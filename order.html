@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Management</title>
+    <link rel="stylesheet" href="orderStyle.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Search Order Details</h1>
+        <input type="text" id="searchBox" placeholder="Search by name or ID..." />
+        <button type="button" id="backBtn">Back</button>
+    </div>
+
+    <div class="filter-sort-container">
+        <label for="filter"><h2>Filter by Status:</h2></label>
+        <select id="filter">
+            <option value="All">All</option>
+            <option value="Waiting">Waiting</option>
+            <option value="Ready">Ready</option>
+            <option value="Delivered">Delivered</option>
+        </select>
+
+        <button type="button" id="sortBtn">Sort by Status</button>
+    </div>
+
+    <div class="orderDetails">
+        <h2>Order Details</h2>
+        <ul id="orderList"></ul>
+    </div>
+
+    <script src="orderScript.js"></script>
+
+</body>
+</html>

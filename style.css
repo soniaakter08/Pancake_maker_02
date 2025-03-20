@@ -1,11 +1,10 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
 
 body {
   font-family: "Nunito Sans", serif;
   /* background-color: #ffffff; */
-  background-color : #001126;
-  color: #FFFFFF;
+  background-color: #001126;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -68,4 +67,8 @@ label {
   display: block;
   margin-top: 10px;
 }
-
+#seeOrder,
+#confirmOrder,
+#checkOrder {
+  border-radius: 5px;
+}

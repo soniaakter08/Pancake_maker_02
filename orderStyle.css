@@ -1,0 +1,148 @@
+
+/* General Page Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #afb7b7;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background-image: url(pancake_2.jpg);
+ 
+ 
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #013538;
+  padding: 20px;
+  border-radius: 10px;
+  
+  
+}
+
+/* Heading */
+h1 {
+  color:white;
+}
+
+/* Search Bar */
+#searchBox {
+  width: 60%;
+  padding: 10px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Filter & Sort */
+.filter-sort-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  margin-right:10vh;
+  color:#010e0f;
+}
+
+#filter, #sortBtn {
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #007bff;
+  justify-content: center;
+}
+
+/* Order Details */
+.orderDetails {
+  background: #013538;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align:center;
+
+}
+
+/* Order List */
+#orderList {
+  list-style: none;
+  padding: 0;
+}
+
+/* Individual Order Card */
+.order-item {
+  background: #91a5a7;
+  border-left: 5px solid #d00a0a;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+ 
+}
+
+.order-item p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Status Dropdown */
+.select-status {
+  padding: 5px;
+  font-size: 14px;
+  border: 2px solid #007bff;
+  border-radius: 5px;
+}
+
+/* Status Colors */
+.select-status option[value="Waiting"] {
+  color: orange;
+}
+.select-status option[value="Ready"] {
+  color: green;
+}
+.select-status option[value="Delivered"] {
+  color: blue;
+}
+
+/* Remove Button */
+.removeBtn {
+  background: #dc3545;
+  margin-top: 10px;
+  margin-left: 5px;
+ 
+}
+
+.removeBtn:hover {
+  background: #b21f2d;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #searchBox {
+      width: 100%;
+  }
+  .filter-sort-container {
+      flex-direction: column;
+  }
+}
